@@ -23,7 +23,7 @@ TMPFILES=()
 #trap 'rm ${TMPFILES[*]}' EXIT; # cleanup on exit
 
 OPTS=(--url $URL --project $PROJECT)
-
+[[ -n "${GROUP:-}" ]] && OPTS=(${OPTS[*]:-} --group $GROUP)
 
 #
 # Read authentication credentials

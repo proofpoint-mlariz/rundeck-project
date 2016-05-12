@@ -30,6 +30,7 @@ rerun_options_parse() {
             --apikey) rerun_option_check $# $1; APIKEY=$2 ; shift ;;
             --scm-integration) rerun_option_check $# $1; SCM_INTEGRATION=$2 ; shift ;;
             --action) rerun_option_check $# $1; ACTION=$2 ; shift ;;
+            --group) rerun_option_check $# $1; GROUP=$2 ; shift ;;
             # help option
             -|--*?)
                 rerun_option_usage
